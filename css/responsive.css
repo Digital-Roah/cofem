@@ -1,0 +1,53 @@
+@media (max-width : 992px) {
+    .home-banner .carousel-arrow {
+        display: none !important;
+    }
+
+    .home-banner:hover .carousel-arrow {
+       display: block !important;
+    }
+
+    .canvas-area {
+        background: rgb(44, 44, 44);
+    }
+
+    .btn-clcan {
+        color: white;
+        border: none;
+        font-size: 25px;
+    }
+
+    .btn-clcan:focus {
+        border: none;
+    }
+
+    .btn-clcan:hover {
+        color: #EED860;
+    }
+
+    .toggle-btn {
+        position: absolute;
+        top: 34px;
+        right: 130px;
+    }
+}
+
+@media (max-width : 480px) {
+    .join-area h5 {
+      font-size: 17px;
+    }
+    
+    .join-area h2 {
+        font-size: 33px;
+    }
+
+    .sermon-area {
+        padding: 20px;
+    }
+
+    .toggle-btn {
+        position: absolute;
+        top: 34px;
+        right: 50px;
+    }
+}

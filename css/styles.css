@@ -1,0 +1,881 @@
+@import url('fonts.css');
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-barlow {
+    font-family: 'Barlow', sans-serif;
+}
+
+.text-heebo {
+    font-family: 'Heebo', sans-serif;
+}
+
+.text-ibm {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.text-quicksand {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.text-raleway {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.font-300 {
+    font-weight: 300;
+}
+
+.font-400 {
+    font-weight: 400;
+}
+
+.font-500 {
+    font-weight: 500;
+}
+
+.font-600 {
+    font-weight: 600;
+}
+
+.font-700 {
+    font-weight: 700;
+}
+
+.text-light-yellow {
+    color: #EFE866;
+}
+
+.text-yellow {
+    color: #EDC563;
+}
+
+.text-mid-yellow {
+    color: #EED860;
+}
+
+.text-blackmain {
+    color: rgb(44, 44, 44);
+}
+
+.text-grey {
+    color: rgb(90, 90, 90);
+}
+
+.navbar {
+    background: rgb(44, 44, 44);
+}
+
+.navbar .navbar-brand img {
+    width: 70px;
+}
+
+.canvas-img {
+    width: 70px;
+}
+
+.navbar .navbar-nav .nav-item {
+    margin-right: 10px;
+    transition: all 0.5s ease-in-out;
+    font-family: 'Heebo', sans-serif;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    text-transform: uppercase;
+    color: white;
+}
+
+.navbar .navbar-nav .nav-item.active .nav-link {
+    color: #EED860;
+}
+
+.navbar .navbar-nav .nav-item:hover .nav-link {
+    color: #EED860;
+}
+
+.navbar .navbar-nav .nav-item .nav-bot {
+    width: 0px;
+    height: 2px;
+    background: #EED860;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-item.active .nav-bot {
+    width: 80%;
+}
+
+.navbar .navbar-nav .nav-item:hover .nav-bot {
+    width: 80%;
+}
+
+.toggle-btn {
+    color: #EED860;
+    border: none;
+    text-align: right;
+}
+
+.toggle-btn:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.btn-search {
+    color: white;
+}
+
+.btn-search:hover {
+    color: #EFE866;
+}
+
+.btn-search:focus {
+    border: 1px solid transparent !important;
+    box-shadow: none !important;
+}
+
+.search-group .form-label {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+}
+
+.search-group .form-control {
+    border-radius: 0px;
+    font-size: 14px;
+  }
+
+  .search-group .form-select {
+    border-radius: 0px;
+    font-size: 14px;
+  }
+
+  .search-group .form-control:focus {
+    box-shadow: none;
+    border-color: rgb(44, 44, 44);
+    color: rgb(44, 44, 44);
+  }
+
+  .search-group .form-select:focus {
+    box-shadow: none;
+  }
+
+.home-banner {
+    position: relative;
+}
+
+.home-banner .carousel-arrow {
+    border: 0;
+    background: rgba(0,0,0,0.6);
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translate(0, -50%);
+    outline: 0;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    transition: all 0.5s ease-in-out;
+  }
+
+  /* .home-banner:hover .carousel-arrow {
+     display: block !important;
+  } */
+  
+  /* Modificação só pra a seta do próximo carousel ficar na direita */
+  
+  .home-banner .carousel-arrow.next {
+    right: 0;
+    margin-right: 15px;
+  }
+
+  .home-banner .carousel-arrow.next:hover {
+    right: 0;
+    margin-right: 20px;
+  }
+
+  .home-banner .carousel-arrow.prev {
+    left: 0;
+    margin-left: 15px;
+  }
+
+  .home-banner .carousel-arrow.prev:hover {
+    left: 0;
+    margin-left: 20px;
+  }
+
+  .slider-dots {
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .slider-dots li {
+    display: inline-block;
+    margin: 0 8px;
+  }
+
+  .slider-dots li > button {
+    width: 20px;
+    height: 3px;
+    background: white;
+    color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .slider-dots li.slick-active > button {
+    background: #EFE866;
+  }
+
+
+
+.banner-one {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url(../img/c-service-1.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 550px;
+    position: relative;
+}
+
+.banner-two {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url(../img/church-sermon.png) no-repeat center;
+    background-size: cover;
+    min-height: 550px;
+    position: relative;
+}
+
+.banner-three {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url(../img/church-bookshop.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 550px;
+    position: relative;
+}
+
+.banner-area {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding-bottom: 150px;
+}
+
+.join-area {
+    border-left: 3px solid white;
+    padding-left: 10px;
+    color: white;
+}
+
+.join-area h5 {
+    text-transform: uppercase;
+}
+
+.join-area h2 {
+    text-transform: uppercase;
+    font-size: 38px;
+}
+
+.join-butarea {
+    margin-top: 25px;
+}
+
+.btn-connect {
+    color: rgb(44, 44, 44);
+    background: #EDC563;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding: 10px 35px;
+    border: 2px solid #EDC563;
+    transition:all 0.8s, color 0.3s 0.3s;
+}
+
+.btn-connect:hover {
+    color: #EDC563;
+    background: transparent;
+    border: 2px solid #EDC563 !important;
+    box-shadow:300px 0 0 0 transparent inset !important;
+}
+
+section {
+    margin-top: 70px;
+}
+
+.welcome-area p {
+    color: rgb(90, 90, 90);
+    font-weight: 400;
+    line-height: 1.9em;
+}
+
+.btn-listen {
+    color: #EDC563;
+    background: rgb(44, 44, 44);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding: 10px 35px;
+    border: 2px solid rgb(44, 44, 44);
+    border-radius: 0px;
+    transition:all 0.8s, color 0.3s 0.3s;
+}
+
+.btn-listen:hover {
+    color: rgb(44, 44, 44);
+    background: white;
+    border: 2px solid rgb(44, 44, 44) !important;
+    box-shadow:300px 0 0 0 white inset !important;
+}
+
+.activity-content {
+    position: relative;
+    margin: 0px 15px;
+}
+
+.activity-content .content-area {
+    /* position: absolute; */
+    margin-top: -30px;
+    background: rgb(44, 44, 44);
+    width: 100%;
+}
+
+.content-titcover {
+    margin-left: 25px;
+    margin-right: 25px;
+    position: relative;
+}
+
+.content-title {
+    position: absolute;
+    top: -15px;
+    background: #EDC563;
+    width: 100%;
+    padding: 7px;
+}
+
+.activity-content .content-area .content-details {
+    position: relative;
+    padding: 40px 15px 30px 15px;
+}
+
+.content-title h5 {
+    font-size: 18px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    /* text-align: center; */
+    margin-bottom: 0px;
+}
+
+.content-details .detail-info {
+    margin-bottom: 20px;
+}
+
+.content-details .detail-info h6 {
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.content-details .detail-info span {
+   line-height: 1.6em;
+   font-size: 15px;
+}
+
+.section-title .heading {
+    text-transform: uppercase;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.section-title .yellow-bot {
+    width: 50px;
+    height: 4px;
+    background: #f3c348;
+}
+
+.sermon-area {
+    margin-top: 20px;
+    padding: 10px;
+    background: #fafae3;
+    transition: all 0.5s ease-in-out;
+}
+
+.sermon-area a {
+    text-decoration: none;
+}
+
+.sermon-area:hover {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.sermon-area a span {
+    display: block;
+}
+
+.sermon-area a .title {
+    color: rgb(44, 44, 44);
+    font-weight: 500;
+    font-family: 'Heebo', sans-serif;
+}
+
+.sermon-area a .date {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+    color: rgb(44, 44, 44);
+}
+
+.sermon-area a .date i {
+    font-size: 7px;
+    border: 2px solid #f3c348;
+    padding: 3px 7px;
+    color: #f3c348;
+    margin-left: 15px;
+}
+
+.sermon-area a .date {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+    color: rgb(44, 44, 44);
+}
+
+.sermon-area a .preacher-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+    color: rgb(44, 44, 44);
+}
+
+.btn-see {
+    color: #EDC563;
+    background: rgb(44, 44, 44);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 17px;
+    padding: 10px 20px;
+    border: 2px solid rgb(44, 44, 44);
+    border-radius: 0px;
+    transition:all 0.8s, color 0.3s 0.3s;
+}
+
+.btn-see:hover {
+    color: rgb(44, 44, 44);
+    background: white;
+    border: 2px solid rgb(44, 44, 44) !important;
+    box-shadow:300px 0 0 0 white inset !important;
+}
+
+   /* Carousel Slider Center Mode */
+
+   .my-slider .slider-arrow {
+    border: 0;
+    background: #f3c348;
+    padding: 7px 15px;
+    position: absolute;
+    font-size: 20px;
+    z-index: 5;
+    top: -30px;
+    transform: translate(0, -50%);
+    outline: 0;
+    cursor: pointer;
+  }
+
+  /* Modificação só pra a seta do próximo carousel ficar na direita */
+  
+  .my-slider .slider-arrow.next {
+    right: 0;
+    background: rgb(44, 44, 44);
+  }
+
+  .my-slider .slider-arrow.prev {
+    right: 50px;
+  }
+
+  .myslider-dots {
+    list-style: none;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .myslider-dots li {
+    display: inline-block;
+    margin: 0 8px;
+  }
+  
+  .myslider-dots li > button {
+    width: 8px;
+    height: 10px;
+    border: none;
+    background: rgb(44, 44, 44);
+    font-size: 0px;
+    /* color: #65066C; */
+    /* border-radius: 50%; */
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .myslider-dots li.slick-active > button {
+    background: #f3c348;
+  }
+
+  .slider-item .slider-area {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background: white;
+  }
+
+  .slider-item .slider-area .img-slider {
+    width: 100%;
+    height: 300px;
+    object-fit: scale-down;
+    /* height: 200px; */
+  }
+
+  .project-slide {
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  .project-slide:hover {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+
+  .slider-area .item-head {
+    display: block;
+    color: rgb(44, 44, 44);
+    margin-top: 15px;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+  }
+
+  .slider-area .item-body {
+    font-size: 13px;
+    color: grey;
+    margin-top: 7px;
+    display: block;
+  }
+
+  .slider-area .item-author {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 7px;
+    color:  rgb(44, 44, 44);
+    display: block;
+    font-family: 'Barlow', sans-serif;
+  }
+
+  .slider-area .item-author .author {
+    color: #fabd23;
+    font-weight: 600;
+  }
+
+  .testimonial-area {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #fae7b8;
+  }
+
+  .testi-content {
+    position: relative;
+}
+
+.testi-content .carousel-arrow {
+    border: 0;
+    background: transparent;
+    /* display: none !important; */
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translate(0, -50%);
+    outline: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 25px;
+    padding: 7px 13px;
+    background: rgb(44, 44, 44);
+  }
+
+  /* .testi-content:hover .carousel-arrow {
+     display: block !important;
+  } */
+  
+  /* Modificação só pra a seta do próximo carousel ficar na direita */
+  
+  .testi-content .carousel-arrow.next {
+    right: 0;
+    margin-right: 15px;
+  }
+
+  .img-testimonial {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  .test-quote p {
+    font-size: 17px;
+  }
+
+  .contact-group .form-label {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    color: white;
+  }
+
+  .contact-group .form-control::placeholder {
+    color: rgb(192, 191, 191) !important;
+  }
+
+  .contact-group .form-control {
+    border-radius: 0px;
+    font-size: 14px;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+  }
+
+  .contact-group .form-select {
+    border-radius: 0px;
+    font-size: 14px;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+  }
+
+  .contact-group .form-control:focus {
+    box-shadow: none;
+    border-color: #EED860;
+    color: #EED860;
+  }
+
+  .contact-group .form-select:focus {
+    box-shadow: none;
+  }
+
+  .contact-group .form-select option {
+     background: rgb(44, 44, 44);
+  }
+
+  .contact-group .form-select option:hover {
+    background: #f3c348 !important;
+  }
+
+  .contact-group .form-select option::selection {
+    background: #f3c348 !important;
+  }
+
+  .btn-submit {
+    color: #EDC563;
+    background: transparent;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: 2px solid #EDC563;
+    border-radius: 0px;
+    transition:all 0.8s, color 0.3s 0.3s;
+}
+
+.btn-submit:hover {
+    color: rgb(44, 44, 44);
+    background: #EDC563;
+    border: 2px solid #EDC563 !important;
+    box-shadow:300px 0 0 0 #EDC563 inset !important;
+}
+
+  .contact-area {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/church-banner-1.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 500px;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .contact-area p {
+    font-size: 15px;
+  }
+
+.footer-area {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background: rgb(33, 33, 33);
+}
+
+.footer-head h5 {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.footer-head .yellow-bot {
+    background: #EDC563;
+    width: 50px;
+    height: 3px;
+}
+
+.connect-list {
+    padding-inline-start: 0px;
+    list-style-type: none;
+    margin-top: 13px;
+}
+
+.connect-list li {
+    line-height: 1.5em;
+    font-size: 13px;
+    color: whitesmoke;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.foot-list {
+    padding-inline-start: 0px;
+    list-style-type: none;
+    margin-top: 13px;
+}
+
+.foot-list li a {
+    line-height: 2em;
+    font-size: 13px;
+    color: whitesmoke;
+    font-weight: 300;
+    margin-bottom: 8px;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.foot-list li a:hover {
+    color: #EDC563;
+    margin-left: 3px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    margin-right: 15px;
+}
+
+.social-links a:hover {
+    color: #EDC563;
+}
+
+.copyright p {
+   font-size: 14px;
+   text-align: center;
+   font-weight: 300;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px 10px 15px;
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(44, 44, 44);
+  }
+
+  .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.float:hover {
+    color: white;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+/* Other Pages Styles */
+.other-banners {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url(../img/cofem-oth-ban.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 300px;
+  position: relative;
+  padding-top: 100px;
+}
+
+.other-banners h2 {
+  font-family: 'Heebo', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.other-banners p {
+  font-family: 'Barlow', sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.other-banners p a {
+  color: #EFE866;
+  text-decoration: none;
+}
+
+.aims-image {
+  margin-top: 30px;
+}
+
+.mission-list {
+  margin-top: 15px;
+  padding-inline-start: 0px;
+  list-style-type: none;
+}
+
+.mission-list li {
+  line-height: 1.7em;
+  margin-bottom: 10px;
+  color: rgb(90, 90, 90);
+  font-family: 300;
+  font-size: 15px;
+}
+
+.mission-list li span {
+  font-weight: 500;
+  color: #e6a709;
+}
+
+.book-item .slider-area {
+  width: 100% !important;
+  margin-left: 0% !important;
+  margin-right: 0% !important;
+  background: white;
+}
