@@ -50,4 +50,9 @@
         top: 34px;
         right: 50px;
     }
+
+    .float{
+        bottom:20px;
+        left:20px;
+    }
 }
